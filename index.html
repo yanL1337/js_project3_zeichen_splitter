@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zeichenketten</title>
+  </head>
+  <body>
+    <form
+      style="display: flex; flex-direction: column"
+      onsubmit="trennen(); return false"
+    >
+      <label for="firstChain">Zu trennende Zeichenkette</label>
+      <input type="text" id="firstChain" />
+
+      <label for="secondChain">Woran trennen?</label>
+      <div style="display: flex">
+        <input type="text" id="secondChain" />
+        <label for="before">Davor</label>
+        <input type="radio" id="before" value="vorher" name="abfrage" />
+        <label for="after">Danach</label>
+        <input type="radio" id="after" value="danach" name="abfrage" />
+      </div>
+      <button type="submit">Klick mich</button>
+    </form>
+    <p id="beforeTrennung"></p>
+    <p id="afterTrennung"></p>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
